@@ -12,18 +12,5 @@ std::shared_ptr<LoadBalancer<SchedulingAlgorithm>> LoadBalancer<SchedulingAlgori
     return std::shared_ptr<LoadBalancer>(load_balancer);
 }
 
-void LoadBalancerBase::add_server(std::unique_ptr<Server> server) {
-    if (!server) throw std::runtime_error("add_server: server is null");
-    if (server->has_owner()) throw std::runtime_error("add_server: server already has an owner");
-    
-    server->set_owner(this);
-    servers.push_back(std::move(server));  
-}
-
-Response LoadBalancerBase::process_request(Request request) {
-    decltype(scheduler->next()) server = scheduler->next();
-    Response response = server->process_request(request);
-    return response;
-}
 
 #endif
