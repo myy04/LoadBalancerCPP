@@ -16,7 +16,7 @@ public:
     }
 
 private:
-    std::string data;
+    const std::string data;
 };
 
 #endif

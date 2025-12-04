@@ -6,9 +6,10 @@
 #include <memory>
 
 class Server;
+class Scheduler;
 
 class LoadBalancerBase {
-private:
+protected:
     LoadBalancerBase();
     Scheduler* scheduler;
     std::vector<std::unique_ptr<Server>> servers;
@@ -16,7 +17,7 @@ private:
 public:
     virtual ~LoadBalancerBase() = 0;
     Response process_request(Request);
-    void add_server(std::unique_ptr<Server>);
+    virtual void add_server(std::unique_ptr<Server>);
 
     const std::vector<std::unique_ptr<Server>>& get_servers() {
         return servers;

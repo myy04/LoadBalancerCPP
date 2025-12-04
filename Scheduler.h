@@ -19,6 +19,4 @@ public:
     virtual ~Scheduler() = 0;
 };
 
-class RoundRobinScheduler;
-
 #endif
