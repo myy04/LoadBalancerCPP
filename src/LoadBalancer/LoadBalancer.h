@@ -1,7 +1,7 @@
 #ifndef LOAD_BALANCER_H
 #define LOAD_BALANCER_H
 
-#include "../Response.h"
+#include "../misc/Response.h"
 #include "../misc/Request.h"
 #include <memory>
 

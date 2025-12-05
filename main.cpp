@@ -1,12 +1,11 @@
 // #include "Scheduler.h"
-#include "Server/Server.h"
-#include "misc/Request.h"
-#include "Response.h"
-#include "LoadBalancer/LoadBalancer.h"
-#include "Scheduler/RoundRobinScheduler.h"
+#include "src/Server/Server.h"
+#include "src/misc/Request.h"
+#include "src/misc/Response.h"
+#include "src/LoadBalancer/LoadBalancer.h"
+#include "src/Scheduler/RoundRobinScheduler.h"
 
 #include <iostream>
-#include <vector>
 #include <memory>
 
 
@@ -18,7 +17,7 @@ int main() {
         load_balancer->add_server(std::unique_ptr<Server> (new Server()));
     }
 
-    while (1) {
+    while (true) {
         Request request = Request::get_request();
         Response response = load_balancer->process_request(request);
         response.print();

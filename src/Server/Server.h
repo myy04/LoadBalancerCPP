@@ -2,7 +2,7 @@
 #define SERVER_H
 
 #include "../misc/Request.h"
-#include "../Response.h"
+#include "../misc/Response.h"
 #include <memory>
 
 class LoadBalancerBase;
