@@ -1,9 +1,9 @@
 // #include "Scheduler.h"
-#include "Server.h"
-#include "Request.h"
+#include "Server/Server.h"
+#include "misc/Request.h"
 #include "Response.h"
-#include "LoadBalancer.h"
-#include "RoundRobinScheduler.h"
+#include "LoadBalancer/LoadBalancer.h"
+#include "Scheduler/RoundRobinScheduler.h"
 
 #include <iostream>
 #include <vector>
