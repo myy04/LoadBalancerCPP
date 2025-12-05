@@ -1,8 +1,8 @@
 #ifndef LOAD_BALANCER_H
 #define LOAD_BALANCER_H
 
-#include "Response.h"
-#include "Request.h"
+#include "../Response.h"
+#include "../misc/Request.h"
 #include <memory>
 
 class Server;
@@ -31,6 +31,6 @@ public:
 };
 
 
-#include "LoadBalancer.ipp"
+#include "../LoadBalancer.ipp"
 
 #endif

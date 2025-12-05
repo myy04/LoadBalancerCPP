@@ -1,9 +1,9 @@
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
 
-#include "Server.h"
+#include "../Server/Server.h"
 #include <vector>
-#include "LoadBalancer.h"
+#include "../LoadBalancer/LoadBalancer.h"
 
 class Scheduler {
 protected:

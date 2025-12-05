@@ -1,7 +1,7 @@
 #include "LoadBalancer.h"
-#include "Server.h"
-#include "Request.h"
-#include "Scheduler.h"
+#include "../Server/Server.h"
+#include "../misc/Request.h"
+#include "../Scheduler/Scheduler.h"
 
 void LoadBalancerBase::add_server(std::unique_ptr<Server> server) {
     if (!server) throw std::runtime_error("add_server: server is null");

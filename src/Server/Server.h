@@ -1,8 +1,8 @@
 #ifndef SERVER_H
 #define SERVER_H
 
-#include "Request.h"
-#include "Response.h"
+#include "../misc/Request.h"
+#include "../Response.h"
 #include <memory>
 
 class LoadBalancerBase;
