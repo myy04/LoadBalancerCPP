@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/LoadBalancerCPP.dir/main.cpp.o CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o -o LoadBalancerCPP

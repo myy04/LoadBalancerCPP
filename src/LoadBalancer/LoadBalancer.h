@@ -10,7 +10,7 @@ class Scheduler;
 
 class LoadBalancerBase {
 protected:
-    LoadBalancerBase();
+    LoadBalancerBase() = default;
     Scheduler* scheduler;
     std::vector<std::unique_ptr<Server>> servers;
     
@@ -31,6 +31,6 @@ public:
 };
 
 
-#include "../LoadBalancer.ipp"
+#include "LoadBalancer.ipp"
 
 #endif

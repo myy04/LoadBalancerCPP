@@ -20,7 +20,7 @@ private:
 
 public:
     Server();
-    ~Server();
+    ~Server() = default;
 
     bool has_owner();
     Response process_request(Request);

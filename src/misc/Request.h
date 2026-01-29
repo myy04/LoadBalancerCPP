@@ -19,8 +19,8 @@ public:
         return data;
     }
 
-    Request(Request&);
-    Request(Request&&);
+    Request(Request&) = default;
+    Request(Request&&) = default;
 };
 
 #endif
