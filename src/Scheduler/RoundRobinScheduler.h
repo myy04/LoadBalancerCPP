@@ -5,7 +5,7 @@
 
 class RoundRobinScheduler: public Scheduler { 
 private:
-    ContainerType& const servers;
+    ContainerType& servers;
     IteratorType next_server;
 public:
     virtual IteratorType next() override;

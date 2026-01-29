@@ -16,7 +16,7 @@ public:
     Scheduler(LoadBalancerBase* load_balancer): load_balancer{load_balancer} {}
 
     virtual IteratorType next() = 0;
-    virtual ~Scheduler() = 0;
+    virtual ~Scheduler() = default;
 };
 
 #endif

@@ -16,3 +16,5 @@ Response LoadBalancerBase::process_request(Request request) {
     Response response = (*server)->process_request(request);
     return response;
 }
+
+LoadBalancerBase::~LoadBalancerBase() = default;
