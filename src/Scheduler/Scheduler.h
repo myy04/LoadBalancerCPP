@@ -4,19 +4,12 @@
 #include "../Server/Server.h"
 #include <vector>
 #include "../LoadBalancer/LoadBalancer.h"
-
-class Scheduler {
-protected:
-    Scheduler() = delete;
-    LoadBalancerBase* load_balancer;
-    using ContainerType = decltype(load_balancer->get_servers());
-    using IteratorType = decltype(load_balancer->get_servers().begin());
-
+ 
+template<typename SchedulingAlgorithm>
+class Scheduler {    
 public:
-    Scheduler(LoadBalancerBase* load_balancer): load_balancer{load_balancer} {}
-
-    virtual IteratorType next() = 0;
-    virtual ~Scheduler() = default;
+    
+protected:
 };
 
 #endif

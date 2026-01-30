@@ -1,30 +1,40 @@
 #ifndef SERVER_H
 #define SERVER_H
 
-#include "../misc/Request.h"
-#include "../misc/Response.h"
+#include "../misc/RequestBase.h"
+#include "../misc/ResponseBase.h"
+
 #include <memory>
+#include <random>
+#include <chrono>
+#include <thread>
 
-class LoadBalancerBase;
-
+template<typename RequestType, typename ResponseType>
 class Server {
-private:    
-    void set_owner(LoadBalancerBase* new_owner);
-    friend class LoadBalancerBase;
-    LoadBalancerBase *owner;
-    
-    static size_t& get_global_counter() {
-        static size_t global_counter;
-        return global_counter;
+public:
+    static std::shared_ptr<Server> create() {
+        return std::shared_ptr<Server<RequestType, ResponseType>> Server<RequestType, ResponseType>();
     }
 
-public:
-    Server();
-    ~Server() = default;
+    ResponseType send_request(RequestType request) {
+        std::this_thread::sleep_for(std::chrono::seconds(delay));
+        return ResponseType(request);
+    }
 
-    bool has_owner();
-    Response process_request(Request);
-    const size_t id;
+private:
+    Server(): delay(max(MIN_DELAY, rand() % MAX_DELAY)) {
+        static int servers_counter = 0;
+        server_id = ++servers_counter;
+        std::cout << "Server (" << server_id << ") " << "has a delay: " << delay << " seconds" << std::endl;
+    };
+
+    const int server_id;
+    const int delay;
+    const static int MAX_DELAY = 7;
+    const static int MIN_DELAY = 1;
 };
+
+
+#include "Server.ipp"
 
 #endif

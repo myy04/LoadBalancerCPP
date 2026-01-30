@@ -19,8 +19,10 @@ int main() {
 
     while (true) {
         Request request = Request::get_request();
+        std::cout << request << std::endl;
+
         Response response = load_balancer->process_request(request);
-        response.print();
+        std::cout << response << std::endl;
     }
 
     return 0;

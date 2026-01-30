@@ -1,6 +1,6 @@
 #include "RoundRobinScheduler.h"
 
-RoundRobinScheduler::IteratorType RoundRobinScheduler::next() {
+const Server* RoundRobinScheduler::next() {
     auto ret = next_server++;
     if (next_server == servers.end()) next_server = servers.begin();
     return ret;

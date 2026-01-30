@@ -1,35 +1,32 @@
-#ifndef LOAD_BALANCER_H
-#define LOAD_BALANCER_H
+#ifndef LOADBALANCER_H
+#define LOADBALANCER_H
 
-#include "../misc/Response.h"
-#include "../misc/Request.h"
+#include "Server.h"
+
 #include <memory>
+#include <vector>
 
-class Server;
-class Scheduler;
-
+template<typename RequestType, typename ResponseType>
 class LoadBalancerBase {
+public:
+    virtual ResponseType send_request(RequestType);
 protected:
+    std::vector<std::shared_ptr<T>> servers;
     LoadBalancerBase() = default;
-    Scheduler* scheduler;
-    std::vector<std::unique_ptr<Server>> servers;
-    
-public:
-    virtual ~LoadBalancerBase() = 0;
-    Response process_request(Request);
-    virtual void add_server(std::unique_ptr<Server>);
-
-    const std::vector<std::unique_ptr<Server>>& get_servers() {
-        return servers;
-    }
+private:
+    using T = LoadBalancerBase<RequestType, ResponseType>;
 };
 
-template<typename SchedulingAlgorithm>
-class LoadBalancer : public LoadBalancerBase {
+template<typename RequestType, typename ResponseType, typename SchedulingAlgorithm>
+class LoadBalancer : public LoadBalancerBase<RequestType, ResponseType> {  
 public:
-    static std::shared_ptr<LoadBalancer<SchedulingAlgorithm>> create();
+    static std::shared_ptr<T> create();
+    virtual ResponseType send_request(RequestType);
+protected:
+    SchedulingAlgorithm scheduler;
+private:
+    using T = LoadBalancer<RequestType, ResponseType, SchedulingAlgorithm>;
 };
-
 
 #include "LoadBalancer.ipp"
 
