@@ -3,13 +3,9 @@
 
 #include "Scheduler.h"
 
-class RoundRobinScheduler: public Scheduler { 
-private:
-    ContainerType& servers;
-    IteratorType next_server;
+class RoundRobinScheduler: public Scheduler<RoundRobinScheduler> { 
 public:
-    virtual IteratorType next() override;
-    RoundRobinScheduler(LoadBalancerBase* lb);
+private:   
 };
 
 #endif
