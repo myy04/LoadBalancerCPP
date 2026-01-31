@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/yerdaulet/Development/LoadBalancerCPP/build",
+  "command": "/usr/bin/c++  -I/Users/yerdaulet/Development/LoadBalancerCPP/src -g -std=gnu++11 -arch arm64 -o CMakeFiles/LoadBalancerCPP.dir/main.cpp.o -c /Users/yerdaulet/Development/LoadBalancerCPP/main.cpp",
+  "file": "/Users/yerdaulet/Development/LoadBalancerCPP/main.cpp",
+  "output": "CMakeFiles/LoadBalancerCPP.dir/main.cpp.o"
+}
+]

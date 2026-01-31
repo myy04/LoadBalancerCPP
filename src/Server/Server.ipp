@@ -5,7 +5,7 @@
 
 template<typename RequestType, typename ResponseType>
 std::shared_ptr<Server<RequestType, ResponseType>> Server<RequestType, ResponseType>::create() {
-    return std::make_shared<Server<RequestType, ResponseType>>();
+    return std::shared_ptr<Server<RequestType, ResponseType>>(new Server<RequestType, ResponseType>());
 }
 
 template<typename RequestType, typename ResponseType>
@@ -15,9 +15,7 @@ ResponseType Server<RequestType, ResponseType>::send_request(RequestType request
 }
 
 template<typename RequestType, typename ResponseType>
-Server<RequestType, ResponseType>::Server() : delay(std::max(MIN_DELAY, rand() % MAX_DELAY)) {
-    static int servers_counter = 0;
-    server_id = ++servers_counter;
+Server<RequestType, ResponseType>::Server() : ServerBase(), server_id(ServerBase::get_counter()), delay(std::max(MIN_DELAY, rand() % MAX_DELAY)) {
     std::cout << "Server (" << server_id << ") " << "has a delay: " << delay << " seconds" << std::endl;
 }
 
