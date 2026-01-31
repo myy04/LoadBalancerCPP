@@ -10,7 +10,7 @@ public:
         data = request.get_data() * 10;
     }
 
-    friend std::ostream& operator << (std::ostream& os, const ResponseInteger& response) {
+    friend std::ostream& operator << (std::ostream& os, ResponseInteger& response) {
         os << response.data;
         return os;
     }

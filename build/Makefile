@@ -160,78 +160,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/LoadBalancer/LoadBalancer.o: src/LoadBalancer/LoadBalancer.cpp.o
-.PHONY : src/LoadBalancer/LoadBalancer.o
-
-# target to build an object file
-src/LoadBalancer/LoadBalancer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o
-.PHONY : src/LoadBalancer/LoadBalancer.cpp.o
-
-src/LoadBalancer/LoadBalancer.i: src/LoadBalancer/LoadBalancer.cpp.i
-.PHONY : src/LoadBalancer/LoadBalancer.i
-
-# target to preprocess a source file
-src/LoadBalancer/LoadBalancer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.i
-.PHONY : src/LoadBalancer/LoadBalancer.cpp.i
-
-src/LoadBalancer/LoadBalancer.s: src/LoadBalancer/LoadBalancer.cpp.s
-.PHONY : src/LoadBalancer/LoadBalancer.s
-
-# target to generate assembly for a file
-src/LoadBalancer/LoadBalancer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.s
-.PHONY : src/LoadBalancer/LoadBalancer.cpp.s
-
-src/Scheduler/RoundRobinScheduler.o: src/Scheduler/RoundRobinScheduler.cpp.o
-.PHONY : src/Scheduler/RoundRobinScheduler.o
-
-# target to build an object file
-src/Scheduler/RoundRobinScheduler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o
-.PHONY : src/Scheduler/RoundRobinScheduler.cpp.o
-
-src/Scheduler/RoundRobinScheduler.i: src/Scheduler/RoundRobinScheduler.cpp.i
-.PHONY : src/Scheduler/RoundRobinScheduler.i
-
-# target to preprocess a source file
-src/Scheduler/RoundRobinScheduler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.i
-.PHONY : src/Scheduler/RoundRobinScheduler.cpp.i
-
-src/Scheduler/RoundRobinScheduler.s: src/Scheduler/RoundRobinScheduler.cpp.s
-.PHONY : src/Scheduler/RoundRobinScheduler.s
-
-# target to generate assembly for a file
-src/Scheduler/RoundRobinScheduler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.s
-.PHONY : src/Scheduler/RoundRobinScheduler.cpp.s
-
-src/Server/Server.o: src/Server/Server.cpp.o
-.PHONY : src/Server/Server.o
-
-# target to build an object file
-src/Server/Server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o
-.PHONY : src/Server/Server.cpp.o
-
-src/Server/Server.i: src/Server/Server.cpp.i
-.PHONY : src/Server/Server.i
-
-# target to preprocess a source file
-src/Server/Server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.i
-.PHONY : src/Server/Server.cpp.i
-
-src/Server/Server.s: src/Server/Server.cpp.s
-.PHONY : src/Server/Server.s
-
-# target to generate assembly for a file
-src/Server/Server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LoadBalancerCPP.dir/build.make CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.s
-.PHONY : src/Server/Server.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -245,15 +173,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/LoadBalancer/LoadBalancer.o"
-	@echo "... src/LoadBalancer/LoadBalancer.i"
-	@echo "... src/LoadBalancer/LoadBalancer.s"
-	@echo "... src/Scheduler/RoundRobinScheduler.o"
-	@echo "... src/Scheduler/RoundRobinScheduler.i"
-	@echo "... src/Scheduler/RoundRobinScheduler.s"
-	@echo "... src/Server/Server.o"
-	@echo "... src/Server/Server.i"
-	@echo "... src/Server/Server.s"
 .PHONY : help
 
 

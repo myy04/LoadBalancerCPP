@@ -11,6 +11,12 @@ public:
         os << derived;
         return os;
     }  
+
+    friend std::istream& operator >> (std::istream& is, const RequestBase<RequestDerived>& request) {
+        const RequestDerived& derived = static_cast<const RequestDerived&>(request);
+        is >> derived;
+        return is;
+    }
 }; 
 
 

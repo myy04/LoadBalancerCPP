@@ -86,65 +86,17 @@ CMakeFiles/LoadBalancerCPP.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LoadBalancerCPP.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yerdaulet/Development/LoadBalancerCPP/main.cpp -o CMakeFiles/LoadBalancerCPP.dir/main.cpp.s
 
-CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o: CMakeFiles/LoadBalancerCPP.dir/flags.make
-CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o: /Users/yerdaulet/Development/LoadBalancerCPP/src/LoadBalancer/LoadBalancer.cpp
-CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o: CMakeFiles/LoadBalancerCPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yerdaulet/Development/LoadBalancerCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o -MF CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o.d -o CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o -c /Users/yerdaulet/Development/LoadBalancerCPP/src/LoadBalancer/LoadBalancer.cpp
-
-CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yerdaulet/Development/LoadBalancerCPP/src/LoadBalancer/LoadBalancer.cpp > CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.i
-
-CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yerdaulet/Development/LoadBalancerCPP/src/LoadBalancer/LoadBalancer.cpp -o CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.s
-
-CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o: CMakeFiles/LoadBalancerCPP.dir/flags.make
-CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o: /Users/yerdaulet/Development/LoadBalancerCPP/src/Scheduler/RoundRobinScheduler.cpp
-CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o: CMakeFiles/LoadBalancerCPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yerdaulet/Development/LoadBalancerCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o -MF CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o.d -o CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o -c /Users/yerdaulet/Development/LoadBalancerCPP/src/Scheduler/RoundRobinScheduler.cpp
-
-CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yerdaulet/Development/LoadBalancerCPP/src/Scheduler/RoundRobinScheduler.cpp > CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.i
-
-CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yerdaulet/Development/LoadBalancerCPP/src/Scheduler/RoundRobinScheduler.cpp -o CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.s
-
-CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o: CMakeFiles/LoadBalancerCPP.dir/flags.make
-CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o: /Users/yerdaulet/Development/LoadBalancerCPP/src/Server/Server.cpp
-CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o: CMakeFiles/LoadBalancerCPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yerdaulet/Development/LoadBalancerCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o -MF CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o.d -o CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o -c /Users/yerdaulet/Development/LoadBalancerCPP/src/Server/Server.cpp
-
-CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yerdaulet/Development/LoadBalancerCPP/src/Server/Server.cpp > CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.i
-
-CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yerdaulet/Development/LoadBalancerCPP/src/Server/Server.cpp -o CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.s
-
 # Object files for target LoadBalancerCPP
 LoadBalancerCPP_OBJECTS = \
-"CMakeFiles/LoadBalancerCPP.dir/main.cpp.o" \
-"CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o" \
-"CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o" \
-"CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o"
+"CMakeFiles/LoadBalancerCPP.dir/main.cpp.o"
 
 # External object files for target LoadBalancerCPP
 LoadBalancerCPP_EXTERNAL_OBJECTS =
 
 LoadBalancerCPP: CMakeFiles/LoadBalancerCPP.dir/main.cpp.o
-LoadBalancerCPP: CMakeFiles/LoadBalancerCPP.dir/src/LoadBalancer/LoadBalancer.cpp.o
-LoadBalancerCPP: CMakeFiles/LoadBalancerCPP.dir/src/Scheduler/RoundRobinScheduler.cpp.o
-LoadBalancerCPP: CMakeFiles/LoadBalancerCPP.dir/src/Server/Server.cpp.o
 LoadBalancerCPP: CMakeFiles/LoadBalancerCPP.dir/build.make
 LoadBalancerCPP: CMakeFiles/LoadBalancerCPP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yerdaulet/Development/LoadBalancerCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable LoadBalancerCPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yerdaulet/Development/LoadBalancerCPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LoadBalancerCPP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LoadBalancerCPP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
