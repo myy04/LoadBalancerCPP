@@ -12,14 +12,14 @@ class RoundRobinScheduler: public Scheduler<ServersRequestType, ServersResponseT
 public:
     std::shared_ptr<ServerType> get_server() {
         if (this->servers.empty()) throw std::runtime_error("no servers are associated with this load balancer");
-        auto ret = *current_server_iterator;
-        current_server_iterator++;
-        if (current_server_iterator == this->servers.end()) current_server_iterator = this->servers.begin();
-        return ret;
+        if (current_server_idx >= this->servers.size()) current_server_idx = 0;
+        auto server = this->servers[current_server_idx];
+        if (++current_server_idx >= this->servers.size()) current_server_idx = 0; 
+        return server;
     }
-    RoundRobinScheduler(const std::vector<std::shared_ptr<ServerType>>& servers): BaseType(servers), current_server_iterator(servers.end()) {};
+    RoundRobinScheduler(const std::vector<std::shared_ptr<ServerType>>& servers): BaseType(servers), current_server_idx(0) {};
 private:
-    typename std::vector<std::shared_ptr<ServerType>>::const_iterator current_server_iterator;
+    size_t current_server_idx = 0;
 };
 
 #endif
