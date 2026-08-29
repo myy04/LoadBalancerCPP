@@ -61,10 +61,7 @@ To test the load balancer, you can use the provided simulation scripts:
    ```
 
 3. **Run Unit Tests**:
-   ```bash
-   g++ -std=c++17 -Iinclude tests/lb_test.cpp src/BackendManager.cpp src/Socket.cpp -lpthread -o build/lb_test
-   ./build/lb_test
-   ```
+   (Unit tests have been removed from the current version of the project)
 
 ## 📊 Monitoring
 While the load balancer is running, it will output a status table to the console every 10 seconds:
